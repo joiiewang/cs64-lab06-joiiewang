@@ -44,6 +44,7 @@ struct Test TESTS[NUM_TEST_CASES] = {
 int runTest(struct Test* test) {
   mipsinstruction* exp = &test->expectedOutput;
   mipsinstruction got = decode(test->input);
+  //printf("%d %d %d %d %d %d", got.funct, got.immediate, got.rd, got.rt, got.rs, got.opcode);
   return (exp->funct == got.funct &&
           exp->immediate == got.immediate &&
           exp->rd == got.rd &&
