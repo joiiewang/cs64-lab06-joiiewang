@@ -57,9 +57,9 @@ mipsinstruction decode(int value)
 
 	}
 
-	/*if(instr.opcode !=0){
+	if(instr.opcode !=0){
 		instr.immediate = -1;
-	}*/
+	}
 
 
 
